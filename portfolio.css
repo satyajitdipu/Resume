@@ -1,0 +1,115 @@
+header{
+    display: inline;
+  }
+  .nav{
+    display: flex;
+    clear: both;
+    align-items: center;
+    margin-top: -1.5%;
+    margin-left: 2%;
+  }
+  .home{
+    font-size: 220%;
+    margin-left: 3%;
+    display: inline-block;
+  }
+  .nav-list{
+    list-style: none;
+    display: flex;
+    margin-left: 55%;
+    
+  }
+  .nav-ele{
+    margin-left: 40%;
+    font-size:180%;
+  }
+  .body{
+      display: flex;
+      list-style: none;
+  }
+  .text{
+      margin-top: 10%;
+      margin-left: -20%;
+  }
+  .name{
+      font-size: 530%;
+      font-family: 'Roboto Mono', monospace;
+      margin-left: -85%;
+      margin-top: -17%;
+  }
+  .line{
+      font-size: 300%;
+      margin-top: -18%;
+      margin-left: -85%;
+  }
+  .creat{
+      font-size: 300%;
+      margin-left: -85%;
+      color: rgba(78, 77, 77, 0.674);
+  }
+  a{
+    text-decoration:none;
+    color: gray;
+  }
+ .active:hover{
+  background-color: black;
+  color: white;
+  
+ }
+ .auto{
+  color: black;
+ }
+ .myimg{
+  margin-top: -6%;
+  margin-left: 9%;
+  width: 100%;
+ }
+ .logo{
+  list-style: none;
+  display: flex;
+  margin-left: 87%;
+  width: 10%;
+ }
+ .logoimg{
+    padding-right: -110%;
+    
+    
+ }
+ .logoimg:hover{
+    background-color: gray;
+    padding: -100%;
+ }
+.cer{
+  width: 70%;
+  margin-left: 15%;
+}
+.certi{
+  display: flex;
+  margin-left: 5%;
+  list-style: none;
+  align-items: center;
+}
+h2{
+  margin-left: 5%;
+}
+.mo{
+  border-style: solid;
+}
+.la{
+  color:black;
+  margin-left: 40%;
+  background-color:rgba(122, 160, 209, 0.592);
+}
+.la:hover{
+  color: white;
+  background-color: blueviolet;
+}
+@media only screen and (max-width: 1146px) {
+  .nav,
+  .nav-list {
+    flex-direction: column;
+  }
+  .myimg{
+    width: 0%;
+  }
+}

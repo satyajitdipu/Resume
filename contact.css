@@ -1,0 +1,149 @@
+header{
+    display: inline;
+  }
+  .nav{
+    display: flex;
+    clear: both;
+    align-items: center;
+    margin-top: -1.5%;
+    margin-left: 2%;
+  }
+  .home{
+    font-size: 220%;
+    margin-left: 3%;
+    display: inline-block;
+  }
+  .nav-list{
+    list-style: none;
+    display: flex;
+    margin-left: 55%;
+    
+  }
+  .nav-ele{
+    margin-left: 40%;
+    font-size:180%;
+  }
+  .body{
+      display: flex;
+      list-style: none;
+  }
+  .text{
+      margin-top: 10%;
+      margin-left: -20%;
+  }
+  .name{
+      font-size: 530%;
+      font-family: 'Roboto Mono', monospace;
+      margin-left: -85%;
+      margin-top: -17%;
+  }
+  .line{
+      font-size: 300%;
+      margin-top: -18%;
+      margin-left: -85%;
+  }
+  .creat{
+      font-size: 300%;
+      margin-left: -85%;
+      color: rgba(78, 77, 77, 0.674);
+  }
+  a{
+    text-decoration:none;
+    color: gray;
+  }
+ .active:hover{
+  background-color: black;
+  color: white;
+  
+ }
+ .auto{
+  color: black;
+ }
+ .myimg{
+  margin-top: -2%;
+  margin-left: 3%;
+  width: 38%;
+ }
+ .logo{
+  list-style: none;
+  display: flex;
+  margin-left: 87%;
+  margin-top: 19%;
+  width: 10%;
+ }
+ .logoimg{
+    padding-right: -110%;
+    
+    
+ }
+ .logoimg:hover{
+    background-color: gray;
+    padding: -100%;
+ }
+
+.container{
+    padding: 20px 12px;
+    background-color:gray;
+    color: white;
+    margin-left: -170%;
+    margin-right: 50%;
+    box-shadow: 0px 0px 20px black;
+  }
+
+  input{
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .tex{
+    width: 100%;
+    height: 300%;
+  }
+  .email{
+    width: 50%;
+  }
+  .submit{
+    margin-top: 1%;
+    margin-left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .submit:hover{
+    background: black;
+    font-style: oblique;
+    color: aqua;
+    text-shadow: white;
+
+  }
+  .fl{
+    margin-left: 34%;
+    margin-top: -11%;
+  }
+  .logo2{
+    float: left;
+    width: 3%;
+    margin-left: 5%;
+    border-style:double;
+    list-style: none;
+    padding: 10%;
+
+  }
+  .wr{
+    text-align: left;
+    margin-left: -10%;
+    
+  }
+  .wr2{
+      text-align: left;
+      margin-left: -100%;
+      
+  }
+  @media only screen and (max-width: 1146px) {
+    .nav,
+    .nav-list {
+      flex-direction: column;
+    }
+    .myimg{
+      width: 0%;
+    }
+  }

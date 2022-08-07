@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/f53d1edc42.js" crossorigin="anonymous"></script>
+<script defer></script>
+</head>
+<link rel="stylesheet" href="home.css">
+<body>
+    <header class="head">
+      
+      <nav class="nav">
+        <p class="home"><b><a href="home.html">Home</a></b></h1>
+        <ul class="nav-list">
+          <li class="nav-ele"><a class="active" href="about.html">About</a></li>
+          <li class="nav-ele"><a class="active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-ele"><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <ul class="body">
+        <li><img class="myimg" src="PXL_20220709_082331601.jpg" alt="" ></li>
+        <li class="text"><p class="name">Satyajit sahoo</p><p class="line"><b>___________</b></p><p class="creat">Creative <span class="auto"></span class="auto2"><span></span></p></li>
+        <li><button class="button"><a href="contact.html"> Get In Touch</a></button></li>
+    </ul>
+    <ul class="logo">
+      <li class="logoimg"><a href="https://www.facebook.com/profile.php?id=100011208945898"><img  src="facebook.png" alt="" width="50%"></a></li>
+      <li class="logoimg"><a href="https://www.instagram.com/_.satyajit._dipu/"><img src="instagram.png" alt=""width="50%"></a></li>
+      <li class="logoimg"><a href="https://github.com/satyajitdipu"><img src="github.png" alt=""width="50%" ></a></li>
+      <li class="logoimg"><a href="https://www.linkedin.com/in/satyajit-sahoo-2457601a6/"><img src="linkedin-logo.png" alt=""width="50%"></a></li>
+    </ul>
+
+</body>
+<script>
+
+  //auto-text
+    const typedTextSpan = document.querySelector(".auto");
+const cursor = document.querySelector(".auto2");
+
+const words = ["Programmer", "Developer", "Desiner"];
+const typingDelay = 200;
+const erasingDelay = 200;
+const newLetterDelay = 20;
+let index = 0;
+let charIndex = 0;
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (words.length) {
+    setTimeout(type, newLetterDelay);
+  }
+});
+
+function type() {
+  if (charIndex < words[index].length) {
+    typedTextSpan.textContent += words[index].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    setTimeout(erase, newLetterDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    typedTextSpan.textContent = words[index].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    index++;
+    if (index >= words.length) {
+      index = 0;
+    }
+    setTimeout(type, typingDelay + 100);
+  }
+}
+function classToggle() {
+  const navs = document.querySelectorAll('.nav')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+
+document.querySelector('.nav')
+  .addEventListener('click', classToggle);
+
+
+    </script>
+</html>
