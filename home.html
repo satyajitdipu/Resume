@@ -7,8 +7,7 @@
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://kit.fontawesome.com/f53d1edc42.js" crossorigin="anonymous"></script>
-<script defer></script>
+
 </head>
 <link rel="stylesheet" href="home.css">
 <body>
@@ -36,57 +35,5 @@
     </ul>
 
 </body>
-<script>
-
-  //auto-text
-    const typedTextSpan = document.querySelector(".auto");
-const cursor = document.querySelector(".auto2");
-
-const words = ["Programmer", "Developer", "Desiner"];
-const typingDelay = 200;
-const erasingDelay = 200;
-const newLetterDelay = 20;
-let index = 0;
-let charIndex = 0;
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (words.length) {
-    setTimeout(type, newLetterDelay);
-  }
-});
-
-function type() {
-  if (charIndex < words[index].length) {
-    typedTextSpan.textContent += words[index].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } else {
-    setTimeout(erase, newLetterDelay);
-  }
-}
-
-function erase() {
-  if (charIndex > 0) {
-    typedTextSpan.textContent = words[index].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } else {
-    index++;
-    if (index >= words.length) {
-      index = 0;
-    }
-    setTimeout(type, typingDelay + 100);
-  }
-}
-function classToggle() {
-  const navs = document.querySelectorAll('.nav')
-  
-  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-}
-
-document.querySelector('.nav')
-  .addEventListener('click', classToggle);
-
-
-    </script>
+<script src="home.js"></script>
 </html>
